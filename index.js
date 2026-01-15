@@ -1,8 +1,9 @@
+const apiKey = '6e09b38cb67e355becb29d99d739c231';
 
 const urls = [
-    'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=' + apiKey,                  // Películas populares
-    'https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=' + apiKey,  // Para niños
-    'https://api.themoviedb.org/3/discover/movie?with_genres=18&primary_release_year=2014&api_key=' + apiKey   // Drama 2014 (cámbialo si quieres)
+    'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=' + apiKey,
+    'https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=' + apiKey,
+    'https://api.themoviedb.org/3/discover/movie?with_genres=18&primary_release_year=2014&api_key=' + apiKey
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -19,9 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 const article = document.createElement('article');
                 article.classList.add('pelicula');
                 const img = document.createElement('img');
-                img.src = 'https://image.tmdb.org/t/p/w500/' + pelicula.poster_path;  // ← w500 para mejor rendimiento
+                img.src = 'https://image.tmdb.org/t/p/w500/' + pelicula.poster_path;
                 img.alt = pelicula.title || 'Película';
-                img.title = pelicula.title || 'Película';  // Muestra título al pasar el mouse
+                img.title = pelicula.title || 'Película';
                 article.append(img);
                 populares.append(article);
             });
@@ -39,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 estrenos.append(article);
             });
 
-            // Fila 3: Drama 2014 (o lo que cambies)
+            // Fila 3: Drama 2014
             const vistas = document.getElementById('vistas');
             catalogoTres.results.forEach(pelicula => {
                 const article = document.createElement('article');
@@ -54,6 +55,5 @@ window.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Error al cargar películas:', error);
-            // Opcional: muestra un mensaje en la página si falla
         });
 });
