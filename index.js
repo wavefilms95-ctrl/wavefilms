@@ -7,6 +7,10 @@ const urls = [
     `https://api.themoviedb.org/3/discover/movie?with_genres=16&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`,
     `https://api.themoviedb.org/3/discover/movie?with_genres=35,10749&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`,
     `https://api.themoviedb.org/3/discover/movie?with_genres=18,14&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`
+    `https://api.themoviedb.org/3/discover/movie?with_genres=35&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`
+    `https://api.themoviedb.org/3/discover/movie?with_genres=10749&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`
+    `https://api.themoviedb.org/3/discover/movie?with_genres=14&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`
+    `https://api.themoviedb.org/3/discover/movie?with_genres=16,14&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
