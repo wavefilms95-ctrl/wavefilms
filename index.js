@@ -1,6 +1,6 @@
 
 ];
-const apiKey = '6e09b38cb67e355becb29d99d739c231';  // ← Aquí va tu key exactamente
+
 
 const urls = [
     'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=' + apiKey,                  // Películas populares
