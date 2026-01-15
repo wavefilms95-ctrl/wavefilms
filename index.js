@@ -1,7 +1,4 @@
 
-];
-
-
 const urls = [
     'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=' + apiKey,                  // Películas populares
     'https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=' + apiKey,  // Para niños
