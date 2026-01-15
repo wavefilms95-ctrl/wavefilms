@@ -1,9 +1,9 @@
 const apiKey = '6e09b38cb67e355becb29d99d739c231';
 
 const urls = [
-    `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${apiKey}`,
-    `https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=${apiKey}`,
-    `https://api.themoviedb.org/3/discover/movie?with_genres=18&primary_release_year=2014&api_key=${apiKey}`
+    `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`,
+    `https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`,
+    `https://api.themoviedb.org/3/discover/movie?with_genres=18&primary_release_year=2014&api_key=6e09b38cb67e355becb29d99d739c231`
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
