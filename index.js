@@ -4,13 +4,8 @@ const urls = [
     `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`,
     `https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`,
     `https://api.themoviedb.org/3/discover/movie?with_genres=18&primary_release_year=2014&api_key=6e09b38cb67e355becb29d99d739c231`
-    // Fila 1: Películas de Anime / Animación (más populares)
     `https://api.themoviedb.org/3/discover/movie?with_genres=16&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`,
-
-    // Fila 2: Comedia + Romance (comedia romántica o amor)
     `https://api.themoviedb.org/3/discover/movie?with_genres=35,10749&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`,
-
-    // Fila 3: Drama + Fantasía (dramas fantásticos o épicos)
     `https://api.themoviedb.org/3/discover/movie?with_genres=18,14&sort_by=popularity.desc&api_key=6e09b38cb67e355becb29d99d739c231`
 ];
 
